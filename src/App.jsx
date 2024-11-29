@@ -9,6 +9,7 @@ import Post from './Post.jsx';
 function App() {
   const [posts, setPosts] = useState([]);
   const idRef = useRef(1);
+  console.log(idRef);
 
   function addPost(title) {
     const newPost = {id: idRef.current, title};  
